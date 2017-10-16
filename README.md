@@ -52,8 +52,7 @@ public void Example1()
     Option<int> option = 1;
     
     // Most Performant
-    int value;
-    if (option.TryGetValue(out value))
+    if (option.TryGetValue(out int value)) // C# 7 out variables
     {
         // Do something with the value
         Console.WriteLine(value);
